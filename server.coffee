@@ -47,5 +47,7 @@ app.get '/contact_us_to_get_your_carpet_cleaned', (req, res) ->
 
 
 
+# NOTE: technically the main script isn't supposed to start the server:
+# http://package.json.jit.su/
 app.listen 3000
 console.log 'app started at 3000'
