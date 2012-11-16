@@ -28,13 +28,6 @@
     "node-inspector" : "latest"
   },
   
-  "keywords": [
-    "carpet",
-    "cleaning",
-    "steaming",
-    "water"
-  ],
-  
   "scripts": {
     "test": "make test"
   }
