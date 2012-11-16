@@ -15,16 +15,19 @@ compile = (str, path) ->
         .set('filename', path)
         .set('compress', true)
         .use(nib())
+        .import('nib')
 
 
 app.configure ->
-  app.set 'view engine', 'jade'
-  app.set 'views', __dirname + '/views'
-  app.use express.static __dirname + '/public'
-  app.use app.router
-  app.use stylus.middleware
+  this.set 'view engine', 'jade'
+  this.set 'views', __dirname + '/views'
+  this.use app.router
+  this.use stylus.middleware
     src      : __dirname + '/public'
     compile  : compile
+  
+  # must come after stylus or will not recompile   
+  this.use express.static __dirname + '/public'
   
 
 app.configure 'development', ->

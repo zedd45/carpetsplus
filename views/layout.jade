@@ -2,12 +2,15 @@ doctype 5
 html
   head
     title= title
+    meta(charset="utf-8")
     link(rel='stylesheet', href='/css/main.css')
     block cssIncludes
   body
-    include header
-    include navigation
-    section#main
-      block content
+    #cp-wrap
+      include header
       
-    block scripts
+      section#cp-main
+        include navigation
+        block content
+      
+      block scripts
