@@ -1,5 +1,6 @@
 main-color = #fa5b4d
 background-color = #faf9f0
+logoShadowColor = darken(white, 50)
 
 html
   min-height 100%
@@ -25,8 +26,8 @@ header
   h1
     font-size 2em
     color black
-    // text-shadow -2px -1px -5px white
-    text-shadow -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white
+    text-shadow -2px -1px -5px logoShadowColor
+    // text-shadow -1px 0 , 0 1px logoShadowColor, 1px 0 logoShadowColor, 0 -1px logoShadowColor
 
 
 #cp-main
@@ -49,3 +50,21 @@ dd
   margin-left 30px
   display list-item 
   list-style circle
+  
+h1, h2, h3, h4, h5
+  margin 10px auto
+ 
+h1
+  font-size 1.5em
+
+h2
+  font-size 1.4em
+  
+h3
+  font-size 1.3em
+  
+h4
+  font-size 1.2em
+  
+h5
+  font-size 1.1em
