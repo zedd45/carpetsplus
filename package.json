@@ -1,0 +1,41 @@
+{
+  "name" : "carpetsplus",
+  "description" : "awesome flooring services",
+  "version" : "0.0.1",
+  "private": "true",
+  "author": "Chris Keen",
+  "repository" : "",
+  "main" : "server.coffee",
+    
+  "contributors" : [ 
+    { "name": "Chris Keen", "email": "christopher.keen@gmail.com" }
+  ],
+  
+  "engines" : { "node": "0.8.x" },
+
+  "dependencies" : {
+    "express"       : "3.x.x",
+    "jade"          : "0.x.x",
+    "stylus"        : "0.x.x",
+    "nib"           : "0.x.x",
+    "node-logger"   : "latest"
+  },
+  
+  "devDependencies" : {
+    "mocha"          : "1.x.x",
+    "should"         : "1.x.x",
+    "supertest"      : "0.0.x",
+    "node-inspector" : "latest"
+  },
+  
+  "keywords": [
+    "carpet",
+    "cleaning",
+    "steaming",
+    "water"
+  ],
+  
+  "scripts": {
+    "test": "make test"
+  }
+}
