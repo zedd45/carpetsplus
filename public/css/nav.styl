@@ -1,27 +1,28 @@
-nav ul 
-  font-family 1.4em Arial, Verdana
-
-  > li
-    display: inline-block;
+nav
+  > ul 
+    font-size 1.4em
+  
+    > li
+      display inline-block
+      
+      > a 
+        display: block;
+        text-decoration: none;
+        text-transform capitalize
+        padding: 7px 15px 3px 15px;
+        color: gray;
+        text-shadow: 1px 1px black;  
+        margin-left: 1px;
+        white-space: nowrap;
+        height:30px; 
+        width:90px;
+        text-align:center;
  
-nav ul li a 
-  display: block;
-  text-decoration: none;
-  text-transform capitalize
-  padding: 7px 15px 3px 15px;
-  color: gray;
-  text-shadow: 1px 1px black;  
-  margin-left: 1px;
-  white-space: nowrap;
-  height:30px; 
-  width:90px;
-  text-align:center;
+        &:hover
+          color: black
+          text-shadow: 1p 1p white
  
-  &:hover
-    color: black
-    text-shadow: 1p 1p white
- 
-  &:active
-    color: white
-    text-shadow: 1p 1p black
+        &:active
+          color: white
+          text-shadow: 1p 1p black
  
