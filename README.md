@@ -1,6 +1,11 @@
 # Welcome to carpets plus
 
+requires Node 0.8.x & NPM
+
+
 to install run
+
+    npm install -g coffee-script
 
     npm install
     # or

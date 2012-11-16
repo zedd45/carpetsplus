@@ -1,0 +1,13 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+    block cssIncludes
+  body
+    include header
+    include navigation
+    section#main
+      block content
+      
+    block scripts
