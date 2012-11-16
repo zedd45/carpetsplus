@@ -8,6 +8,14 @@ app = express()
   
 compile = (str, path) ->
   stylus(str)
+    .define('url', stylus.url(
+          paths : [__dirname + "/public"]
+          limit : 10000
+        ))
+        .set('filename', path)
+        .set('compress', true)
+        .use(nib())
+
 
 app.configure ->
   app.set 'view engine', 'jade'
