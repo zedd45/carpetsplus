@@ -36,7 +36,7 @@ app.configure 'development', ->
   
 
 app.get '/', (req, res) ->
-  res.render 'index.jade', 
+  res.render 'index', 
     title: 'Welcome to Carpets Plus'
   
   
