@@ -44,6 +44,11 @@ app.get '/', (req, res) ->
 app.get '/contact_us_to_get_your_carpet_cleaned', (req, res) ->
   res.render 'contact',
     title: 'Contact Carpets Plus to get your carpet cleaned'
+    
+        
+app.get '/services', (req, res) ->
+  res.render 'services',
+    title: 'Services offered by Carpets Plus'
 
 
 
