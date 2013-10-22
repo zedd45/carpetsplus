@@ -16,6 +16,7 @@ body
 
 #cp-wrap 
   height 100%
+  padding 5px
   
 header
   padding 50px 10px
@@ -26,12 +27,11 @@ header
   h1
     font-size 2em
     color main-color
-    text-shadow -2px -1px -5px logoShadowColor
+    text-shadow -3px 0px -5px logoShadowColor
     // text-shadow -1px 0 , 0 1px logoShadowColor, 1px 0 logoShadowColor, 0 -1px logoShadowColor
 
 
 #cp-main
-	width 750px
 	margin 0px auto
 	text-align left
 	padding 22px
@@ -43,7 +43,7 @@ header
 	  margin-top 12px
 	  font-size: 1.2em
 	
-dl 
+dl
   margin-top 12px	
 	
 dd 
@@ -68,3 +68,15 @@ h4
   
 h5
   font-size 1.1em
+
+
+@media only screen and (max-device-width: 480px)
+	
+	#cp-main
+		width 480px		
+	  
+	
+@media screen and (min-screen-width: 720px)
+  
+	#cp-main
+		width 720px
