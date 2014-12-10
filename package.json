@@ -1,8 +1,8 @@
 {
   "name": "carpetsplus",
-  "description": "awesome flooring services",
-  "version": "0.0.1",
-  "private": "true",
+  "description": "flooring and cleaning services marketing website",
+  "version": "0.2.0",
+  "private": "false",
   "author": "Chris Keen",
   "repository": "",
   "main": "server.coffee",
